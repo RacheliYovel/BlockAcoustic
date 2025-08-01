@@ -1,7 +1,11 @@
 # BlockAcoustic
-A block-acoustic preconditioner for the elastic Helmholtz equation. This repository includes the code for a block triangular preconditioner for elastic Helmholtz whose blocks are acoustic Helmholtz operators, following the paper https://arxiv.org/abs/2411.15897
+A block-acoustic preconditioner for the elastic Helmholtz equation. 
+Rachel Yovel, Eran Treister
+contact: yovelr@bgu.ac.il
 
-To reproduce the results from the paper, run the file "driver.jl". Make sure that you have a local folder named "BenchmarkModels" including the SEG/EAGE salt model, SEAM Phase I model, Marmousi2 and Overthrust 3D model, see references in the paper.
+This repository includes the code for a block triangular preconditioner for elastic Helmholtz whose blocks are acoustic Helmholtz operators, following the paper https://arxiv.org/abs/2411.15897
+
+To reproduce the results from the paper, run the file "driver.jl". To enable the experiments with advanced heterogeneous models, make sure that you have a local folder named "BenchmarkModels" including the SEG/EAGE salt model, SEAM Phase I model, Marmousi2 and Overthrust 3D model, see references in the paper.
 
 This code relies on the following Julia packages:
 LinearAlgebra
